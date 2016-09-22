@@ -39,7 +39,7 @@ public class ParserMain {
                 String line = stream.readLine();
                 if(filter(line)){
 
-                    String[] items = line.split(" ");
+                    String[] items = line.split(" "); // Space delimited
 
                     ParsedEvent event = new ParsedEvent().ConstructAndReturnParsedEvent(items);
                     if(event.timeStamp != LocalDateTime.MIN){
